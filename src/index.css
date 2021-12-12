@@ -1,13 +1,233 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+.App{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
+/*----------filter-container---------*/
+.filter-container{
+  border :1px solid grey;
+  padding: 15px 30px;
+  z-index: +1;
+}
+.filter-container input{
+  width: 250px;
+  height: 25px;
+}
+.filter-container button{
+  margin-left: 10px;
+  width: 80px;
+  height: 25px;
+}
+.filter-container button:hover{
+  cursor: pointer;
+}
+/*----------add task container-----------*/
+.addTask-container{
+  width:60%;
+  border:1px solid grey;
+  margin-top: 20px;
+  background-color: cadetblue;
+}
+.addTask-form{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.addTask-form input{
+  width: 60%;
+  margin-top: 20px;
+  height: 30px;
+}
+.addTask-form button{
+  margin-top: 15px;
+  margin-bottom: 20px;
+  height: 40px;
+  width: 150px;
+  font-size: 20px;
+}
+.addTask-form button:hover{
+  cursor: pointer;
+}
+/*-------display task main-container---------*/
+.tasks-container{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid gray;
+  background-color: burlywood;
+  width: 60%;
+}
+/*-----------task container for showing data-------------*/
+.taskContent-container{
+  position: relative;
+  display: flex;
+  align-items: center;
+  border: 1px solid gray;
+  padding: 20px;
+  margin: 20px;
+  width:750px;
+}
+/*--------task---------*/
+.display-content{
+  background-color: lavender;
+  width: 550px;
+  margin-left: 20px;
+  font-size: 16px;
+  font-weight: bold;
+  padding: 20px;
+  cursor: pointer;
+}
+.checkCompleted{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 30px;
+  font-size: 18px;
+  font-weight: bolder;
+  width:150px;
+  margin-left: 10px;
+  border-radius: 20px;
+  border: 1px solid gray;
+}
+.checkCompleted:hover{
+  cursor: pointer;
+}
+.update-delete-container{
+  display: flex;
+  justify-content: space-around;
+}
+.update-delete-container div{
+  border:1px solid gray;
+  border-radius: 5px;
+  background-color: cornflowerblue;
+  font-size: 16px;
+  font-weight: bold;
+  padding: 4px;
+  margin-top: 10px;
+  cursor: pointer;
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+}
+.update-delete-container div:hover{
+  opacity: 0.8;
+}
+/*-----------warning popup container-----------*/
+.warning-container{
+  position: absolute;
+  top:40%;
+  left: 36%;
+  border: 1px solid gray;
+  width: 400px;
+}
+.warning-container h2{
+  background-color: red;
+  margin: 0px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+}
+.warning-container div{
+  background-color:sienna;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 18px;
+  font-weight: bold;
+  padding: 20px;
+}
+.close-warning-box{
+  position: absolute;
+  top:0px;
+  right: 0px;
+  font-size: 25px;
+  height: 48px;
+  width: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: black;
+  color: wheat;
+  cursor: pointer;
+}
+.close-warning-box:hover{
+  background-color: white;
+  color: black;
+}
+/*---------tooltip-container------------*/
+.tooltip{
+  position: absolute;
+  top:10px;
+  right: -150px;
+  display: flex;
+  flex-direction: column;
+  background-color: brown;
+  border-radius: 10px;
+  padding: 6px;
+  display: none;
+}
+.taskContent-container:hover .tooltip{
+  display: flex;
+  flex-direction: column;
+}
+.tooltip div{
+  margin: 4px;
+}
+/*-----------update-container-----------*/
+.update-container{
+  position: fixed;
+  background-color: skyblue;
+  width:400px;
+  top:200px;
+  left: 470px;
+  padding-top: 5px;
+  z-index: +1;
+}
+.update-container form{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.update-container form input{
+  width:300px;
+  height:30px;
+  margin-top: 15px;
+}
+.update-container form button{
+  border: 1px solid gray;
+  width: 120px;
+  margin-top: 20px;
+  margin-bottom: 50px;
+  height: 40px;
+  background-color: indigo;
+  font-size: 18px;
+  font-weight: bold;
+  color: beige;
+  border-radius: 10px;
+  cursor: pointer;
+}
+.update-container form button:hover{
+  background-color: blueviolet;
+}
+.closeUpdate-button{
+  position: absolute;
+  top: -20px;
+  right: -30px;
+  font-weight: bolder;
+  font-size: 25px;
+  cursor: pointer;
+}
+.closeUpdate-button:hover{
+  color: red;
+}
+/*-------search result container--------------*/
+.search-result{
+  border: 1px solid gray;
+  padding: 10px;
+  font-size: 16px;
+  color: gray;
+  background-color: lightgray;
 }
