@@ -28,7 +28,7 @@ function TaskContent(props){
         }
         axios({
             method: "delete",
-            url: `http://localhost:80/delete/${props.data._id}`,
+            url: `https://kidaura-task-api.herokuapp.com/delete/${props.data._id}`,
             headers: { "Content-Type": "application/x-www-form-urlencoded" },
           })
             .then(function (response) {
@@ -58,7 +58,7 @@ function TaskContent(props){
         const description=e.target.content.value;
         axios({
             method: "post",
-            url: `http://localhost:80/update/${props.data._id}`,
+            url: `https://kidaura-task-api.herokuapp.com/update/${props.data._id}`,
             data: qs.stringify({name:name,content:description}),
             headers: { "Content-Type": "application/x-www-form-urlencoded" },
           })

@@ -32,7 +32,7 @@ function AddTask(props){
         //create a data (task) in backend
         axios({
             method: "post",
-            url: "http://localhost:80/create",
+            url: "https://kidaura-task-api.herokuapp.com/create",
             data: qs.stringify({name:name,content:description}),
             headers: { "Content-Type": "application/x-www-form-urlencoded" },
           })

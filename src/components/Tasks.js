@@ -6,7 +6,7 @@ function Tasks(props){
     const [task,setTask]=useState([]);
     //fetch tasks for first time
     useEffect(()=>{
-        fetch('http://localhost:80/fetch')
+        fetch('https://kidaura-task-api.herokuapp.com/fetch')
         .then((res)=>res.json())
         .then((data)=>{
             setTask(data.data);
