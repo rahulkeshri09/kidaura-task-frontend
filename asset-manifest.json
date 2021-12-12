@@ -1,0 +1,20 @@
+{
+  "files": {
+    "main.css": "/kidaura-task-frontend/static/css/main.282f3695.chunk.css",
+    "main.js": "/kidaura-task-frontend/static/js/main.c1ec738e.chunk.js",
+    "main.js.map": "/kidaura-task-frontend/static/js/main.c1ec738e.chunk.js.map",
+    "runtime-main.js": "/kidaura-task-frontend/static/js/runtime-main.01ffa478.js",
+    "runtime-main.js.map": "/kidaura-task-frontend/static/js/runtime-main.01ffa478.js.map",
+    "static/js/2.c6d910e3.chunk.js": "/kidaura-task-frontend/static/js/2.c6d910e3.chunk.js",
+    "static/js/2.c6d910e3.chunk.js.map": "/kidaura-task-frontend/static/js/2.c6d910e3.chunk.js.map",
+    "index.html": "/kidaura-task-frontend/index.html",
+    "static/css/main.282f3695.chunk.css.map": "/kidaura-task-frontend/static/css/main.282f3695.chunk.css.map",
+    "static/js/2.c6d910e3.chunk.js.LICENSE.txt": "/kidaura-task-frontend/static/js/2.c6d910e3.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.01ffa478.js",
+    "static/js/2.c6d910e3.chunk.js",
+    "static/css/main.282f3695.chunk.css",
+    "static/js/main.c1ec738e.chunk.js"
+  ]
+}
